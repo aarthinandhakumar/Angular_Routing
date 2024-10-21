@@ -1,0 +1,7 @@
+<div class="confirmation">
+    <h3>{{ title }}</h3>
+    <p>Are you sure you want to delete {{ friend.name }}?</p>
+    <button (click)="onDelete()" class="btn btn-danger">OK</button> <!-- Button to confirm the deletion action -->
+    <button (click)="onCancel()" class="btn btn-secondary">Cancel</button> <!-- Button to cancel the deletion action -->
+  </div>
+  

@@ -1,0 +1,21 @@
+form {
+	width: 400px;
+}
+
+button { /* button styling */
+
+	margin: 10px;
+	background-color: cadetblue;
+	color: wheat;
+}
+
+label { /* label styling */
+
+	margin: 10px;
+	
+}
+
+input {
+	margin: 10px;
+	background-color: rgb(222, 222, 173);
+}

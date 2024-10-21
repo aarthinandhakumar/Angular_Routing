@@ -1,0 +1,29 @@
+<div class="form">
+  <h4>{{ title }}</h4>
+  <div class="form-container">
+    <form (ngSubmit)="onSave()">
+      <div class="form-group">
+        <label for="id">Id</label><!-- Label for the ID input field -->
+        <input type="text" name="id" [(ngModel)]="friend.id" [disabled]="friend.id != null" class="form-control" required />
+      </div>
+
+      <div class="form-group">
+        <label for="name">Name</label><!-- Label for the Name input field -->
+        <input type="text" name="name" [(ngModel)]="friend.name" class="form-control" required />
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label><!-- Label for the Address input field -->
+        <input type="text" name="address" [(ngModel)]="friend.address" class="form-control" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label> <!-- Label for the Phone input field -->
+        <input type="text" name="phone" [(ngModel)]="friend.phone" class="form-control" required />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Save</button>
+      <button type="button" (click)="onCancel()" class="btn btn-secondary">Cancel</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+a {
+	color: blue;
+	text-decoration: underline;
+}
+
+nav a {
+	color: green;
+}
+
+.delete-btn {
+	background: black; /* No background */
+	border: none; /* Remove border */
+	color: orange; /* Red color for the delete button */
+	cursor: pointer; /* Change cursor to pointer */
+	margin-left: 10px; /* Space between name and button */
+	font-size: 16px; /* Font size */
+  }
+  
+  .delete-btn:hover {
+	color: darkred; /* Darker red on hover */
+  }
+  
+
+  .confirmation {
+	text-align: center; /* Center align text */
+	margin: 20px; /* Add some margin */
+  }
+  
+  .btn {
+	margin: 10px; /* Space between buttons */
+  }

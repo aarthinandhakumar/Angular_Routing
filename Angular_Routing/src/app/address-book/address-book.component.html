@@ -1,0 +1,18 @@
+<h3>Current Contacts</h3>
+
+<ul>
+  <li *ngFor="let friend of friends">
+    <a [routerLink]="['/details',  friend.id ]" >
+    		{{friend.name}}
+    </a>
+    <button (click)="onDelete(friend.id)" class="btn btn-danger btn-sm delete-btn" aria-label="Delete">
+      &times; <!-- This will display an 'X' -->
+    </button>
+  </li>
+</ul>
+
+<nav>
+	<a routerLink="/add">
+		Add New Contact
+	</a>
+</nav>
